@@ -1,6 +1,12 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
 
 /*
 	BARVY
@@ -13,7 +19,102 @@ html { box-sizing: border-box; }
 	twitter    #1da1f2
 */
 
-
 body {
-	background-color: #bdc3c7;
+  background-color: #bdc3c7;
+  margin: 0;
+}
+
+.profil {
+  width: 250px;
+  margin-left: 20px;
+  margin-top: 20px;
+  color: white;
+}
+
+.hlavicka {
+  position: relative;
+}
+
+.foto {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.logo {
+  background-color: #b92e81;
+  border-radius: 50%;
+  position: absolute;
+  right: 25px;
+  bottom: -20px;
+}
+
+.obsah {
+  background-color: #31363b;
+  padding: 20px 20px;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.odkazy {
+  margin: 0;
+  padding: 0;
+}
+
+.odkazy li {
+  text-transform: uppercase;
+  text-align: center;
+  list-style-type: none;
+}
+
+.odkazy a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.portfolio {
+  width: 100%;
+  border-bottom: 1px solid #3f464d;
+  border-top: 1px solid #3f464d;
+  background-color: #31363b;
+}
+
+.facebook {
+  float: left;
+  width: 50%;
+  background-color: #31363b;
+}
+
+.twitter {
+  float: right;
+  width: 50%;
+  background-color: #31363b;
+  border-left: 0.5px solid #3f464d;
+}
+
+.portfolio:hover {
+  background-color: #e74c3c;
+}
+
+.facebook:hover {
+  background-color: #3b5998;
+}
+
+.twitter:hover {
+  background-color: #1da1f2;
+}
+
+.profil {
+  box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
 }
